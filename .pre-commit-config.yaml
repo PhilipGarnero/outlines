@@ -31,3 +31,13 @@ repos:
       args: [--allow-redefinition]
       exclude: ^examples/
       additional_dependencies: [types-tqdm, types-Pillow]
+- repo: https://github.com/charliermarsh/ruff-pre-commit
+  rev: v0.8.6
+  hooks:
+    - id: ruff
+      args: ["--config=pyproject.toml"]
+# - repo: https://github.com/PyCQA/docformatter
+#   rev: v1.7.5
+#   hooks:
+#     - id: docformatter
+#       args: ["--in-place", "--style=numpy"]

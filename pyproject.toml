@@ -172,3 +172,7 @@ show_missing = true
 [tool.diff_cover]
 compare_branch = "origin/main"
 diff_range_notation = ".."
+
+[tool.docformatter]
+style = "numpy"
+in-place = true
